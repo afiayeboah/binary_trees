@@ -34,7 +34,7 @@ bst_t *bst_remove(bst_t *root, int value)
 			free(root);
 			return (tmp);
 		}
-		tmp = bst_find_min(root->right);
+		tmp = bst_min_val(root->right);
 		root->n = tmp->n;
 		root->right = bst_remove(root->right, tmp->n);
 	}
@@ -42,12 +42,12 @@ bst_t *bst_remove(bst_t *root, int value)
 }
 
 /**
- * bst_find_min - Finds the smallest node in a Binary Search Tree.
+ * bst_min_val - Finds the smallest node in a Binary Search Tree.
  * @root: A pointer to the root node of the tree.
  *
  * Return: A pointer to the smallest node.
  */
-bst_t *bst_find_min(bst_t *root)
+bst_t *bst_min_val(bst_t *root)
 {
 	bst_t *min = root;
 
