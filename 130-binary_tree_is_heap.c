@@ -2,11 +2,13 @@
 #include "102-binary_tree_is_complete.c"
 
 /**
- * check_max - Checks if the node's value is greater than the values of its children.
+ * check_max - Checks if the node's value is greater
+ * than the values of its children.
  *
  * @tree: Pointer to the root node of the binary tree.
  *
- * Return: 1 if the node's value is greater than its children's values, 0 otherwise.
+ * Return: 1 if the node's value is greater than
+ * its children's values, 0 otherwise.
  **/
 int check_max(const binary_tree_t *tree)
 {
